@@ -1,0 +1,12 @@
+P1: porneste server pe portul 8001 pentru a primi mesaj de la P3
+P1: se conecteaza ca si client la P2 pe portul 8002
+P1: trimite mesaj catre P2
+P1: asteapta mesaj de la P3
+
+P2: porneste server pe portul 8002 pentru a primi mesaj de la P1
+P2: se conectează ca si client la P3 pe portul 8003
+P2: asteapta mesaj de la P1 si il trimite mai departe la P3
+
+P3: porneste server pe portul 8003 pentru a primi mesaj de la P2
+P3: se conecteaza ca si client la P1 pe portul 8001
+P3: asteapta mesaj de la P2 si il trimite inapoi la P1 pentru a inchide bucla
